@@ -1,0 +1,25 @@
+analyzing bible.txt...
+the   72271 occurrences
+and   46446 occurrences
+that   15553 occurrences
+shall   10872 occurrences
+unto   10056 occurrences
+his   10017 occurrences
+for   8656 occurrences
+they   8522 occurrences
+with   7377 occurrences
+not   7052 occurrences
+all   6312 occurrences
+thou   5475 occurrences
+was   5393 occurrences
+thy   5196 occurrences
+Lord   5000 occurrences
+which   4916 occurrences
+their   4877 occurrences
+have   4468 occurrences
+them   4438 occurrences
+will   4314 occurrences
+time taken: 0.477659 seconds
+...
+
+

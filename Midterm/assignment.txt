@@ -1,0 +1,18 @@
+This assignment is about performing word counting on multiple books concurrently using basic multi-threading C++ techniques learned so far in this course. Your app must receive an arbitrary number of books on command line as argument, like this:
+>wordCounting.exe book1.txt book2.txt book3.txt
+(this can be tested in project >> Properties >> Debug >> Command Arguments)
+
+Use code provided as starting point to build a console application which opens multiple books simultaneously and process 
+their contents. You should use one thread per each book. 
+1) In each of these producer threads, scan and reading in the words (word's size must be >1 ). 
+2) By product of each thread is 2 fold: 
+	- first we accumulate the total word counts in the above map displayed in function "WordsInFile()". At the end we want to write out the top 20 most occurring words and their counts to the output file, something similar to the attached output.txt (example "book1_output.txt"). 
+	- Another byproduct is building up a std::queue<word> runningQueue, for collecting the book's words for next steps in the main thread.
+3) In main thread a threadsafe unordered_map as above is used to collect the results from each thread's runningQueue, when the runningQueue size reaches say MaxQueuSize=1000. You may want to play with this MaxQueuSize for optimum result. You need to use condition variable to control when a runningQueue is full so it empties its content the main thread's word map.
+
+In the main thread, after all threads finish their work, we want to print the 20 top most occurring words in all books.
+
+In the above plan there are places to optimize work. First get a basic version working. Then start optimizing. Make sure to add timing so you know if you're optimization is making things faster.
+
+Important: we want to save the output to an output file as well.
+Print out the status of the application in the output (started, progress, complete...)
