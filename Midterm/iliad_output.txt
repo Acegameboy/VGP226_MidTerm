@@ -1,0 +1,32 @@
+Started
+Midterm Word Count
+Output file: iliad_output.txt
+Started processing: iliad.txt
+Progress: iliad.txt processed 50000 words
+Progress: iliad.txt processed 100000 words
+Complete: iliad.txt processed 149400 words
+Main thread finished collecting queue data from: iliad.txt
+Writing final top 20 words
+
+Top 20 words from all books:
+the : 9953
+and : 6622
+of : 5609
+to : 3311
+he : 2904
+his : 2537
+in : 2231
+him : 1868
+you : 1809
+with : 1691
+that : 1445
+for : 1417
+as : 1389
+was : 1219
+it : 1144
+they : 1137
+on : 1090
+them : 1052
+son : 1009
+but : 1001
+Complete. Total time: 1.041856 seconds
